@@ -705,15 +705,15 @@ details li {
 }
 
 /* ===================================================
-   RETOQUE FINAL: PORTADA COMPLETA EN EL CUADRADO
+   PARCHE EN FORZA: PRIMERA SECCIÓN COMPLETA
    =================================================== */
-#inicio, .hero-section {
-    padding: 0 !important;             /* Saca los espacios vacíos que dejan el fondo verde al descubierto */
-    min-height: 50vh !important;       /* Fuerza a que el banner ocupe la mitad de la pantalla del celular */
-    background-size: cover !important; /* Estira la imagen para que tape todo el contenedor sin deformarse */
-    background-position: center !important; /* Centra la visual de la planta */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body > section:first-of-type, #inicio, .hero-section {
+    padding: 0 !important;             /* Saca los espacios verdes de los costados */
+    min-height: 55vh !important;       /* Le da el alto a la mitad de la pantalla */
+    background-size: cover !important; /* Fuerza a la planta a cubrir todo el bloque */
+    background-position: center !important; 
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
