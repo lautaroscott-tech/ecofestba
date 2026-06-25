@@ -665,3 +665,43 @@ details li {
     margin-bottom: 10px;
     margin-left: 15px;
 }
+
+/* ===================================================
+   OPTIMIZACIÓN DE LA SECCIÓN INICIO PARA CELULAR
+   =================================================== */
+@media (max-width: 768px) {
+    /* Ajustamos el contenedor principal del Inicio */
+    #inicio, .hero-section, .main-banner {
+        padding: 40px 20px !important; /* Achica el espacio gigante vacío */
+        min-height: auto !important;    /* Evita que se estire infinitamente para abajo */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;            /* Centramos todo el contenido */
+    }
+
+    /* Achicamos el título gigante "ECO FEST" para que entre prolijo */
+    #inicio h1, .hero-section h1, .logo-grande {
+        font-size: 42px !important;     /* Un tamaño ideal para que no sature la pantalla */
+        line-height: 1.1 !important;
+        margin-bottom: 15px !important;
+        letter-spacing: -1px;
+    }
+
+    /* Acomodamos el subtítulo ("Festival de...") para que no se corte */
+    #inicio p, .hero-section p, .subtitulo-banner {
+        font-size: 16px !important;     /* Letra legible y cómoda */
+        max-width: 90%;                 /* Deja margen a los costados */
+        margin: 0 auto 20px auto !important;
+        line-height: 1.4 !important;
+        color: #e0e0e0;
+    }
+
+    /* Si tenés un botón de "Ver más" o "Inscribirse" en el inicio, lo acomodamos */
+    .hero-section .btn, #inicio button {
+        width: 80% !important;          /* Botón cómodo para el dedo */
+        padding: 12px !important;
+        font-size: 16px !important;
+    }
+}
