@@ -704,18 +704,3 @@ details li {
     z-index: 2;
 }
 
-/* ===================================================
-   SOLUCIÓN DEFINITIVA: IMAGEN EN TODO EL BLOQUE VERDE
-   =================================================== */
-#inicio, .hero-section, body > section:first-of-type {
-    background-size: 100% 100% !important; /* Fuerza a la imagen a estirarse sí o sí hasta los bordes de la zona verde */
-    background-repeat: no-repeat !important;
-    background-position: center center !important;
-    
-    /* Le damos el aire justo para que respire el texto sin agrandar de más el fondo */
-    padding-top: 60px !important;   
-    padding-bottom: 60px !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
-background-size: cover !important;
