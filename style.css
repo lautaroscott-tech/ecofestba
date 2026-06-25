@@ -704,3 +704,16 @@ details li {
     z-index: 2;
 }
 
+/* ===================================================
+   RETOQUE FINAL: PORTADA COMPLETA EN EL CUADRADO
+   =================================================== */
+#inicio, .hero-section {
+    padding: 0 !important;             /* Saca los espacios vacíos que dejan el fondo verde al descubierto */
+    min-height: 50vh !important;       /* Fuerza a que el banner ocupe la mitad de la pantalla del celular */
+    background-size: cover !important; /* Estira la imagen para que tape todo el contenedor sin deformarse */
+    background-position: center !important; /* Centra la visual de la planta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
